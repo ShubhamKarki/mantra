@@ -1,0 +1,170 @@
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+ 
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONT
+$default-font-size: 1.6rem;
+
+
+
+.page-header {
+        height: 100vh;
+        position: relative;
+        background-size: cover;
+    background-position: top;
+
+    .squares{
+    animation: move-left-right 1s infinite;
+    background: rgb(61,0,106);
+    background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+    position: absolute;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    border-radius: 20%;
+    z-index: -10;
+
+    &.square1{
+        animation: move-left-right 4s infinite;
+        height: 300px;
+        width: 300px;
+        opacity: 0.5;
+        left: 3%;
+        top: -21%;
+    }
+
+    &.square2{
+        animation: move-left-right 6s infinite;
+        height: 400px;
+        width: 400px;
+        opacity: 0.4;
+        right: -5%;
+        top: -12%;
+    }
+
+    &.square3{
+        animation: move-left-right 5s infinite;
+        height: 200px;
+        width: 200px;
+        opacity: 0.1;
+        left: -5%;
+        bottom: 0%;
+    }
+
+    &.square4{
+        animation: move-left-right 10s infinite;
+        height: 100px;
+        width: 100px;
+        opacity: 0.9;
+        right: 27%;
+        top: 70%;
+    }
+
+    &.square5{
+        animation: move-left-right 6s infinite;
+        height: 250px;
+        width: 250px;
+        opacity: 0.1;
+        left: 32%;
+        bottom: 29%;
+    }
+
+    &.square6{
+        animation: move-left-right 9s infinite;
+        left: 10%;
+        top: 35%;
+        height: 80px;
+        width: 80px;
+        opacity: 0.8;
+    }
+
+    &.square7{
+        animation: move-left-right 3s infinite;
+        width: 300px;
+        height: 300px;
+        right: -5%;
+        bottom: 0%;
+        opacity: 0.1;
+    }
+    }
+
+@keyframes move-left-right {
+    0% {
+
+        transform: translateX(-10px);
+    
+    }
+    50% {
+    
+        transform: translateX(10px);
+    
+    }
+    100% {
+    
+        transform: translateX(-10px);
+    
+    }
+    
+}
+    
+}
+
+.header-text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {  
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+       
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+
+       
+    }
+}
