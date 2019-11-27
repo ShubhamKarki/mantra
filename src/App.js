@@ -24,8 +24,6 @@ const App = () => {
 
 
 	const handleSelect =(value) =>{ 
-		console.log(value);
-
 		setValue(value);
 
 		value === 'random' ? 
@@ -37,7 +35,7 @@ const App = () => {
 
 	const handleClick = () => { 
 		setBool(!bool);
-		console.log(bool)
+
 		}
 				return (<Fragment>
     					<Header />
